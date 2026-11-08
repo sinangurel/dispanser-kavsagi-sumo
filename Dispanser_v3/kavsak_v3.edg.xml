@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-08T10:20:56.209775+03:00 by Eclipse SUMO netconvert 1.28.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value=".\outputs\Dispanser_v2\kavsak_v2.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value=".\outputs\Dispanser_v3\kavsak_v3.net.xml"/>
+        <plain-output-prefix value=".\outputs\Dispanser_v3\kavsak_v3"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.green.time value="25"/>
+        <tls.yellow.time value="3"/>
+        <tls.allred.time value="2"/>
+        <tls.rebuild value="true"/>
+    </tls_building>
+
+    <edge_removal>
+        <remove-edges.explicit value="merkez_kuzeye,pehlivanli_cikis"/>
+    </edge_removal>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<edges version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <edge id="akif_cikis" from="A_merge" to="S_out" name="akif_cikis" priority="1" numLanes="1" speed="8.33" shape="105.00,-60.00 130.00,-130.00 152.00,-230.00" spreadType="center" width="3.25"/>
+    <edge id="akif_giris" from="S_in" to="SE" name="akif_giris" priority="1" numLanes="1" speed="8.33" shape="165.00,-230.00 145.00,-130.00 125.00,-65.00 96.43,-9.22" spreadType="center" width="3.25"/>
+    <edge id="ana_B1" from="E_in" to="NE" name="ana_B1" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_B2" from="NE" to="C_ust" name="ana_B2" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_B3" from="C_ust" to="S1" name="ana_B3" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_B4" from="S1" to="W_out" name="ana_B4" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_D1" from="W_in" to="SW" name="ana_D1" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_D2" from="SW" to="C_alt" name="ana_D2" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_D3" from="C_alt" to="SE" name="ana_D3" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="ana_D4" from="SE" to="E_out" name="ana_D4" priority="3" numLanes="3" speed="13.89" spreadType="center">
+        <lane index="0" disallow="all" width="2.50"/>
+        <lane index="1" width="3.25"/>
+        <lane index="2" width="3.25"/>
+    </edge>
+    <edge id="guneybati_giris" from="SW_in" to="SW" name="guneybati_giris" priority="1" numLanes="1" speed="8.33" shape="-220.00,-125.00 -195.00,-80.00 -165.00,-35.00 -130.00,-10.00" spreadType="center" width="3.25"/>
+    <edge id="hamit_cikis" from="NE" to="NE_out" name="hamit_cikis" priority="1" numLanes="1" speed="8.33" shape="146.41,9.19 168.00,50.00 185.00,100.00 208.00,180.00" spreadType="center" width="3.25"/>
+    <edge id="hamit_giris" from="NE_in" to="NE" name="hamit_giris" priority="1" numLanes="1" speed="8.33" shape="195.00,180.00 170.00,100.00 152.00,50.00 143.40,10.28" spreadType="center" width="3.25"/>
+    <edge id="merkez_asagi" from="C_alt" to="A_merge" priority="1" numLanes="1" speed="8.33" shape="0.00,-10.00 25.00,-25.00 65.00,-45.00 105.00,-60.00" spreadType="center" width="3.25"/>
+    <edge id="merkez_gecis" from="C_ust" to="C_alt" priority="1" numLanes="1" speed="8.33" width="3.25"/>
+    <edge id="pehlivanli_giris" from="N_in" to="N_split" name="pehlivanli_giris" priority="1" numLanes="1" speed="8.33" shape="-30.00,220.00 -25.00,110.00 -12.00,40.00" spreadType="center" width="3.25"/>
+    <edge id="pehlivanli_merkez" from="N_split" to="C_ust" priority="1" numLanes="1" speed="8.33" spreadType="center" width="3.25"/>
+    <edge id="sag_ayrilma" from="N_split" to="R_stop" priority="1" numLanes="1" speed="8.33" shape="-12.00,40.00 -25.00,36.00 -43.00,25.00" spreadType="center" width="3.25"/>
+    <edge id="sag_katilma" from="R_stop" to="S1" priority="1" numLanes="1" speed="8.33" shape="-43.00,25.00 -50.00,19.00 -55.00,10.00" spreadType="center" width="3.25"/>
+</edges>

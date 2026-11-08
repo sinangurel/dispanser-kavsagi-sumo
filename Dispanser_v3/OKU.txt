@@ -1,0 +1,16 @@
+DISPANSER V3 - UST YOL YALNIZCA KAVSAGA GIRIS
+
+NETEDIT: kavsak_v3.net.xml dosyasini acin.
+SUMO-GUI: ZIP paketini tamamen cikarin. File > Open Simulation ile deneme.sumocfg dosyasini acin. Play tusuyla calistirin.
+
+Bu surum kullanicinin son kaydettigi kavsak_v2.net.xml dosyasindan uretildi.
+Yalnizca merkez_kuzeye ve pehlivanli_cikis yol kesimleri kaldirildi. Ustten asagi giris, erken saga ayrilma ve merkezden sag alttaki yola gecis korundu.
+Kullanicinin daha once sildigi akif_cikis_baglanti geri eklenmedi.
+Silinen yollar uzerinden gecen dogu_kuzey, bati_kuzey ve bati_akif deneme rotalari temizlendi.
+Isik programlari degisen baglantilara gore yeniden hesaplandi; gercek saha sureleri degildir.
+
+Test: SUMO 1.28.0, 9 deneme rotasi, toplam 63 arac. Tum araclar yolculugunu tamamladi. Hata veya carpisma uyarisi cikmadi; isinlanma kapaliydi.
+Deneme akislari sentetiktir. Bu test gercek trafik performansi veya saha dogrulamasi degildir.
+Geometri sematiktir. Seritler, mesafeler, sinyal fazlari/sureleri, yaya gecisleri ve diger donus izinleri sahada dogrulanmali.
+25 saniye yesil, 3 saniye sari, 2 saniye tum-kirmizi ayarlari gecici deneme ayarlaridir.
+Kaynak V2 dosyasina dokunulmadi. Duzenlenebilir plain XML kaynaklari da pakettedir.

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-08T10:20:56.203815+03:00 by Eclipse SUMO netconvert 1.28.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value=".\outputs\Dispanser_v2\kavsak_v2.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value=".\outputs\Dispanser_v3\kavsak_v3.net.xml"/>
+        <plain-output-prefix value=".\outputs\Dispanser_v3\kavsak_v3"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.green.time value="25"/>
+        <tls.yellow.time value="3"/>
+        <tls.allred.time value="2"/>
+        <tls.rebuild value="true"/>
+    </tls_building>
+
+    <edge_removal>
+        <remove-edges.explicit value="merkez_kuzeye,pehlivanli_cikis"/>
+    </edge_removal>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<nodes version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <location netOffset="0.00,0.00" convBoundary="-260.00,-230.00,330.00,220.00" origBoundary="-260.00,-230.00,330.00,220.00" projParameter="!"/>
+
+    <node id="A_merge" x="105.00" y="-60.00" type="priority"/>
+    <node id="C_alt" x="0.00" y="-10.00" type="traffic_light" tl="C"/>
+    <node id="C_ust" x="0.00" y="10.00" type="traffic_light" tl="C"/>
+    <node id="E_in" x="330.00" y="10.00" type="dead_end"/>
+    <node id="E_out" x="330.00" y="-10.00" type="dead_end"/>
+    <node id="NE" x="145.00" y="10.00" type="traffic_light" tl="NE"/>
+    <node id="NE_in" x="195.00" y="180.00" type="dead_end"/>
+    <node id="NE_out" x="208.00" y="180.00" type="dead_end"/>
+    <node id="N_in" x="-30.00" y="220.00" type="dead_end"/>
+    <node id="N_split" x="-12.00" y="40.00" type="priority"/>
+    <node id="R_stop" x="-43.00" y="25.00" type="traffic_light" tl="R_stop"/>
+    <node id="S1" x="-55.00" y="10.00" type="priority"/>
+    <node id="SE" x="95.00" y="-10.00" type="traffic_light" tl="SE"/>
+    <node id="SW" x="-130.00" y="-10.00" type="priority"/>
+    <node id="SW_in" x="-220.00" y="-125.00" type="dead_end"/>
+    <node id="S_in" x="165.00" y="-230.00" type="dead_end"/>
+    <node id="S_out" x="152.00" y="-230.00" type="dead_end"/>
+    <node id="W_in" x="-260.00" y="-10.00" type="dead_end"/>
+    <node id="W_out" x="-260.00" y="10.00" type="dead_end"/>
+</nodes>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<routes>
+  <vType id="otomobil" vClass="passenger" length="5" minGap="2.5" maxSpeed="13.89" />
+  <route id="bati_dogu" edges="ana_D1 ana_D2 ana_D3 ana_D4" />
+  <route id="dogu_bati" edges="ana_B1 ana_B2 ana_B3 ana_B4" />
+  <route id="kuzey_dogu" edges="pehlivanli_giris pehlivanli_merkez merkez_gecis ana_D3 ana_D4" />
+  <route id="kuzey_bati" edges="pehlivanli_giris sag_ayrilma sag_katilma ana_B4" />
+  <route id="hamit_bati" edges="hamit_giris ana_B2 ana_B3 ana_B4" />
+  <route id="dogu_hamit" edges="ana_B1 hamit_cikis" />
+  <route id="akif_dogu" edges="akif_giris ana_D4" />
+  <route id="guneybati_dogu" edges="guneybati_giris ana_D2 ana_D3 ana_D4" />
+  <route id="kuzey_asagi" edges="pehlivanli_giris pehlivanli_merkez merkez_gecis merkez_asagi akif_cikis" />
+  <flow id="ornek_bati_dogu" type="otomobil" route="bati_dogu" begin="0" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_dogu_bati" type="otomobil" route="dogu_bati" begin="3" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_kuzey_dogu" type="otomobil" route="kuzey_dogu" begin="6" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_kuzey_bati" type="otomobil" route="kuzey_bati" begin="9" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_hamit_bati" type="otomobil" route="hamit_bati" begin="18" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_dogu_hamit" type="otomobil" route="dogu_hamit" begin="21" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_akif_dogu" type="otomobil" route="akif_dogu" begin="24" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow id="ornek_guneybati_dogu" type="otomobil" route="guneybati_dogu" begin="30" end="600" period="90" departLane="best" departSpeed="0" />
+  <flow departSpeed="0" end="600" period="90" departLane="best" route="kuzey_asagi" type="otomobil" begin="33" id="deneme_kuzey_asagi" />
+</routes>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-08T10:20:56.199463+03:00 by Eclipse SUMO netconvert 1.28.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value=".\outputs\Dispanser_v2\kavsak_v2.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value=".\outputs\Dispanser_v3\kavsak_v3.net.xml"/>
+        <plain-output-prefix value=".\outputs\Dispanser_v3\kavsak_v3"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.green.time value="25"/>
+        <tls.yellow.time value="3"/>
+        <tls.allred.time value="2"/>
+        <tls.rebuild value="true"/>
+    </tls_building>
+
+    <edge_removal>
+        <remove-edges.explicit value="merkez_kuzeye,pehlivanli_cikis"/>
+    </edge_removal>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-260.00,-230.00,330.00,220.00" origBoundary="-260.00,-230.00,330.00,220.00" projParameter="!"/>
+
+    <edge id=":A_merge_0" function="internal">
+        <lane id=":A_merge_0_0" index="0" speed="4.16" length="1.41" width="3.25" shape="104.29,-59.74 104.62,-59.90 104.89,-60.11 105.10,-60.38 105.25,-60.71"/>
+    </edge>
+    <edge id=":C_alt_0" function="internal">
+        <lane id=":C_alt_0_0" index="0" speed="8.33" length="13.81" width="3.25" shape="-1.62,-4.00 -1.09,-6.52 0.52,-9.05 3.19,-11.60 6.94,-14.17"/>
+    </edge>
+    <edge id=":C_alt_1" function="internal">
+        <lane id=":C_alt_1_0" index="0" speed="7.07" length="10.82" width="3.25" shape="-1.62,-4.00 -1.02,-5.37 0.78,-6.34 3.78,-6.93 7.99,-7.12"/>
+    </edge>
+    <edge id=":C_alt_2" function="internal">
+        <lane id=":C_alt_2_0" index="0" speed="13.89" length="12.74" width="3.25" shape="-4.75,-10.38 7.99,-10.38"/>
+        <lane id=":C_alt_2_1" index="1" speed="13.89" length="12.74" width="3.25" shape="-4.75,-7.12 7.99,-7.12"/>
+    </edge>
+    <edge id=":C_ust_0" function="internal">
+        <lane id=":C_ust_0_0" index="0" speed="13.89" length="12.20" width="3.25" shape="4.95,10.38 -7.25,10.38"/>
+        <lane id=":C_ust_0_1" index="1" speed="13.89" length="12.20" width="3.25" shape="4.95,7.12 -7.25,7.12"/>
+    </edge>
+    <edge id=":C_ust_2" function="internal">
+        <lane id=":C_ust_2_0" index="0" speed="8.33" length="14.95" width="3.25" shape="-2.53,16.32 -1.60,12.75 -1.38,9.04 -1.50,5.27 -1.62,1.50"/>
+    </edge>
+    <edge id=":NE_0" function="internal">
+        <lane id=":NE_0_0" index="0" speed="7.99" length="11.82" width="3.25" shape="145.21,18.65 144.10,15.03 142.54,12.44 140.55,10.89 138.11,10.38"/>
+    </edge>
+    <edge id=":NE_1" function="internal">
+        <lane id=":NE_1_0" index="0" speed="5.72" length="9.22" width="3.25" shape="153.73,10.38 151.00,10.74 149.49,11.84 149.20,13.68 150.14,16.25"/>
+    </edge>
+    <edge id=":NE_2" function="internal">
+        <lane id=":NE_2_0" index="0" speed="13.89" length="15.63" width="3.25" shape="153.73,10.38 138.11,10.38"/>
+        <lane id=":NE_2_1" index="1" speed="13.89" length="15.63" width="3.25" shape="153.73,7.12 138.11,7.12"/>
+    </edge>
+    <edge id=":N_split_0" function="internal">
+        <lane id=":N_split_0_0" index="0" speed="6.56" length="8.38" width="3.25" shape="-12.92,44.93 -12.82,42.68 -13.44,40.86 -14.78,39.47 -16.84,38.51"/>
+    </edge>
+    <edge id=":N_split_1" function="internal">
+        <lane id=":N_split_1_0" index="0" speed="8.33" length="10.06" width="3.25" shape="-12.92,44.93 -12.35,42.00 -11.87,40.01 -11.21,38.07 -10.12,35.30"/>
+    </edge>
+    <edge id=":R_stop_0" function="internal">
+        <lane id=":R_stop_0_0" index="0" speed="8.33" length="0.26" width="3.25" shape="-42.89,25.07 -42.95,25.03 -43.00,25.00 -43.04,24.97 -43.10,24.92"/>
+    </edge>
+    <edge id=":S1_0" function="internal">
+        <lane id=":S1_0_0" index="0" speed="7.55" length="7.67" width="3.25" shape="-52.31,14.85 -53.60,12.89 -55.00,11.49 -56.50,10.65 -58.10,10.38"/>
+    </edge>
+    <edge id=":S1_1" function="internal">
+        <lane id=":S1_1_0" index="0" speed="13.89" length="8.43" width="3.25" shape="-49.68,10.38 -58.10,10.38"/>
+        <lane id=":S1_1_1" index="1" speed="13.89" length="8.43" width="3.25" shape="-49.68,7.12 -58.10,7.12"/>
+    </edge>
+    <edge id=":SE_0" function="internal">
+        <lane id=":SE_0_0" index="0" speed="5.75" length="9.25" width="3.25" shape="100.06,-16.30 99.15,-13.71 99.44,-11.86 100.96,-10.75 103.68,-10.38"/>
+    </edge>
+    <edge id=":SE_1" function="internal">
+        <lane id=":SE_1_0" index="0" speed="13.89" length="11.65" width="3.25" shape="92.03,-10.38 103.68,-10.38"/>
+        <lane id=":SE_1_1" index="1" speed="13.89" length="11.65" width="3.25" shape="92.03,-7.12 103.68,-7.12"/>
+    </edge>
+    <edge id=":SW_0" function="internal">
+        <lane id=":SW_0_0" index="0" speed="11.11" length="8.57" width="3.25" shape="-135.87,-14.19 -133.88,-12.58 -132.48,-11.38 -130.93,-10.63 -128.50,-10.38"/>
+    </edge>
+    <edge id=":SW_1" function="internal">
+        <lane id=":SW_1_0" index="0" speed="13.89" length="8.59" width="3.25" shape="-137.10,-10.38 -128.50,-10.38"/>
+        <lane id=":SW_1_1" index="1" speed="13.89" length="8.59" width="3.25" shape="-137.10,-7.12 -128.50,-7.12"/>
+    </edge>
+
+    <edge id="akif_cikis" from="A_merge" to="S_out" name="akif_cikis" priority="1" spreadType="center" shape="105.00,-60.00 130.00,-130.00 152.00,-230.00">
+        <lane id="akif_cikis_0" index="0" speed="8.33" length="175.97" width="3.25" shape="105.25,-60.71 130.00,-130.00 152.00,-230.00"/>
+    </edge>
+    <edge id="akif_giris" from="S_in" to="SE" name="akif_giris" priority="1" spreadType="center" shape="165.00,-230.00 145.00,-130.00 125.00,-65.00 96.43,-9.22">
+        <lane id="akif_giris_0" index="0" speed="8.33" length="224.70" width="3.25" shape="165.00,-230.00 145.00,-130.00 125.00,-65.00 100.06,-16.30"/>
+    </edge>
+    <edge id="ana_B1" from="E_in" to="NE" name="ana_B1" priority="3" spreadType="center">
+        <lane id="ana_B1_0" index="0" disallow="all" speed="13.89" length="176.27" width="2.50" shape="330.00,13.25 153.73,13.25"/>
+        <lane id="ana_B1_1" index="1" speed="13.89" length="176.27" width="3.25" shape="330.00,10.38 153.73,10.38"/>
+        <lane id="ana_B1_2" index="2" speed="13.89" length="176.27" width="3.25" shape="330.00,7.12 153.73,7.12"/>
+    </edge>
+    <edge id="ana_B2" from="NE" to="C_ust" name="ana_B2" priority="3" spreadType="center">
+        <lane id="ana_B2_0" index="0" disallow="all" speed="13.89" length="133.16" width="2.50" shape="138.11,13.25 4.95,13.25"/>
+        <lane id="ana_B2_1" index="1" speed="13.89" length="133.16" width="3.25" shape="138.11,10.38 4.95,10.38"/>
+        <lane id="ana_B2_2" index="2" speed="13.89" length="133.16" width="3.25" shape="138.11,7.12 4.95,7.12"/>
+    </edge>
+    <edge id="ana_B3" from="C_ust" to="S1" name="ana_B3" priority="3" spreadType="center">
+        <lane id="ana_B3_0" index="0" disallow="all" speed="13.89" length="42.43" width="2.50" shape="-7.25,13.25 -49.68,13.25"/>
+        <lane id="ana_B3_1" index="1" speed="13.89" length="42.43" width="3.25" shape="-7.25,10.38 -49.68,10.38"/>
+        <lane id="ana_B3_2" index="2" speed="13.89" length="42.43" width="3.25" shape="-7.25,7.12 -49.68,7.12"/>
+    </edge>
+    <edge id="ana_B4" from="S1" to="W_out" name="ana_B4" priority="3" spreadType="center">
+        <lane id="ana_B4_0" index="0" disallow="all" speed="13.89" length="201.90" width="2.50" shape="-58.10,13.25 -260.00,13.25"/>
+        <lane id="ana_B4_1" index="1" speed="13.89" length="201.90" width="3.25" shape="-58.10,10.38 -260.00,10.38"/>
+        <lane id="ana_B4_2" index="2" speed="13.89" length="201.90" width="3.25" shape="-58.10,7.12 -260.00,7.12"/>
+    </edge>
+    <edge id="ana_D1" from="W_in" to="SW" name="ana_D1" priority="3" spreadType="center">
+        <lane id="ana_D1_0" index="0" disallow="all" speed="13.89" length="122.90" width="2.50" shape="-260.00,-13.25 -137.10,-13.25"/>
+        <lane id="ana_D1_1" index="1" speed="13.89" length="122.90" width="3.25" shape="-260.00,-10.38 -137.10,-10.38"/>
+        <lane id="ana_D1_2" index="2" speed="13.89" length="122.90" width="3.25" shape="-260.00,-7.12 -137.10,-7.12"/>
+    </edge>
+    <edge id="ana_D2" from="SW" to="C_alt" name="ana_D2" priority="3" spreadType="center">
+        <lane id="ana_D2_0" index="0" disallow="all" speed="13.89" length="123.75" width="2.50" shape="-128.50,-13.25 -4.75,-13.25"/>
+        <lane id="ana_D2_1" index="1" speed="13.89" length="123.75" width="3.25" shape="-128.50,-10.38 -4.75,-10.38"/>
+        <lane id="ana_D2_2" index="2" speed="13.89" length="123.75" width="3.25" shape="-128.50,-7.12 -4.75,-7.12"/>
+    </edge>
+    <edge id="ana_D3" from="C_alt" to="SE" name="ana_D3" priority="3" spreadType="center">
+        <lane id="ana_D3_0" index="0" disallow="all" speed="13.89" length="84.04" width="2.50" shape="7.99,-13.25 92.03,-13.25"/>
+        <lane id="ana_D3_1" index="1" speed="13.89" length="84.04" width="3.25" shape="7.99,-10.38 92.03,-10.38"/>
+        <lane id="ana_D3_2" index="2" speed="13.89" length="84.04" width="3.25" shape="7.99,-7.12 92.03,-7.12"/>
+    </edge>
+    <edge id="ana_D4" from="SE" to="E_out" name="ana_D4" priority="3" spreadType="center">
+        <lane id="ana_D4_0" index="0" disallow="all" speed="13.89" length="226.32" width="2.50" shape="103.68,-13.25 330.00,-13.25"/>
+        <lane id="ana_D4_1" index="1" speed="13.89" length="226.32" width="3.25" shape="103.68,-10.38 330.00,-10.38"/>
+        <lane id="ana_D4_2" index="2" speed="13.89" length="226.32" width="3.25" shape="103.68,-7.12 330.00,-7.12"/>
+    </edge>
+    <edge id="guneybati_giris" from="SW_in" to="SW" name="guneybati_giris" priority="1" spreadType="center" shape="-220.00,-125.00 -195.00,-80.00 -165.00,-35.00 -130.00,-10.00">
+        <lane id="guneybati_giris_0" index="0" speed="8.33" length="141.36" width="3.25" shape="-220.00,-125.00 -195.00,-80.00 -165.00,-35.00 -135.87,-14.19"/>
+    </edge>
+    <edge id="hamit_cikis" from="NE" to="NE_out" name="hamit_cikis" priority="1" spreadType="center" shape="146.41,9.19 168.00,50.00 185.00,100.00 208.00,180.00">
+        <lane id="hamit_cikis_0" index="0" speed="8.33" length="174.24" width="3.25" shape="150.14,16.25 168.00,50.00 185.00,100.00 208.00,180.00"/>
+    </edge>
+    <edge id="hamit_giris" from="NE_in" to="NE" name="hamit_giris" priority="1" spreadType="center" shape="195.00,180.00 170.00,100.00 152.00,50.00 143.40,10.28">
+        <lane id="hamit_giris_0" index="0" speed="8.33" length="169.04" width="3.25" shape="195.00,180.00 170.00,100.00 152.00,50.00 145.21,18.65"/>
+    </edge>
+    <edge id="merkez_asagi" from="C_alt" to="A_merge" priority="1" spreadType="center" shape="0.00,-10.00 25.00,-25.00 65.00,-45.00 105.00,-60.00">
+        <lane id="merkez_asagi_0" index="0" speed="8.33" length="107.75" width="3.25" shape="6.94,-14.17 25.00,-25.00 65.00,-45.00 104.29,-59.74"/>
+    </edge>
+    <edge id="merkez_gecis" from="C_ust" to="C_alt" priority="1">
+        <lane id="merkez_gecis_0" index="0" speed="8.33" length="5.50" width="3.25" shape="-1.62,1.50 -1.62,-4.00"/>
+    </edge>
+    <edge id="pehlivanli_giris" from="N_in" to="N_split" name="pehlivanli_giris" priority="1" spreadType="center" shape="-30.00,220.00 -25.00,110.00 -12.00,40.00">
+        <lane id="pehlivanli_giris_0" index="0" speed="8.33" length="176.30" width="3.25" shape="-30.00,220.00 -25.00,110.00 -12.92,44.93"/>
+    </edge>
+    <edge id="pehlivanli_merkez" from="N_split" to="C_ust" priority="1" spreadType="center">
+        <lane id="pehlivanli_merkez_0" index="0" speed="8.33" length="20.45" width="3.25" shape="-10.12,35.30 -2.53,16.32"/>
+    </edge>
+    <edge id="sag_ayrilma" from="N_split" to="R_stop" priority="1" spreadType="center" shape="-12.00,40.00 -25.00,36.00 -43.00,25.00">
+        <lane id="sag_ayrilma_0" index="0" speed="8.33" length="29.50" width="3.25" shape="-16.84,38.51 -25.00,36.00 -42.89,25.07"/>
+    </edge>
+    <edge id="sag_katilma" from="R_stop" to="S1" priority="1" spreadType="center" shape="-43.00,25.00 -50.00,19.00 -55.00,10.00">
+        <lane id="sag_katilma_0" index="0" speed="8.33" length="13.84" width="3.25" shape="-43.10,24.92 -50.00,19.00 -52.31,14.85"/>
+    </edge>
+
+    <tlLogic id="C" type="static" programID="0" offset="0">
+        <phase duration="25" state="rrGGGGr"/>
+        <phase duration="3"  state="rryyyyr"/>
+        <phase duration="2"  state="rrrrrrr"/>
+        <phase duration="25" state="GGrrrrG"/>
+        <phase duration="3"  state="yyrrrry"/>
+        <phase duration="2"  state="rrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="NE" type="static" programID="0" offset="0">
+        <phase duration="25" state="GGrr"/>
+        <phase duration="3"  state="yyrr"/>
+        <phase duration="2"  state="rrrr"/>
+        <phase duration="25" state="rGGG"/>
+        <phase duration="3"  state="ryyy"/>
+        <phase duration="2"  state="rrrr"/>
+    </tlLogic>
+    <tlLogic id="R_stop" type="static" programID="0" offset="0">
+        <phase duration="25" state="G"/>
+        <phase duration="3"  state="y"/>
+        <phase duration="2"  state="r"/>
+    </tlLogic>
+    <tlLogic id="SE" type="static" programID="0" offset="0">
+        <phase duration="25" state="Grr"/>
+        <phase duration="3"  state="yrr"/>
+        <phase duration="2"  state="rrr"/>
+        <phase duration="25" state="rGG"/>
+        <phase duration="3"  state="ryy"/>
+        <phase duration="2"  state="rrr"/>
+    </tlLogic>
+
+    <junction id="A_merge" type="priority" x="105.00" y="-60.00" incLanes="merkez_asagi_0" intLanes=":A_merge_0_0" shape="106.78,-60.16 103.72,-61.26 104.86,-58.21 105.71,-58.67 106.05,-58.97 106.35,-59.32 106.59,-59.71">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="C_alt" type="traffic_light" x="0.00" y="-10.00" incLanes="merkez_gecis_0 ana_D2_0 ana_D2_1 ana_D2_2" intLanes=":C_alt_0_0 :C_alt_1_0 :C_alt_2_0 :C_alt_2_1" shape="-3.25,-4.00 0.00,-4.00 0.89,-4.83 2.00,-5.12 3.55,-5.33 5.55,-5.46 7.99,-5.50 7.99,-12.00 7.78,-12.77 6.11,-15.56 4.00,-14.27 2.38,-13.33 0.98,-12.68 -0.49,-12.27 -2.30,-12.06 -4.75,-12.00 -4.75,-5.50 -3.92,-5.33 -3.63,-5.12 -3.42,-4.83 -3.29,-4.46">
+        <request index="0" response="1100" foes="1100" cont="0"/>
+        <request index="1" response="1100" foes="1100" cont="0"/>
+        <request index="2" response="0000" foes="0011" cont="0"/>
+        <request index="3" response="0000" foes="0011" cont="0"/>
+    </junction>
+    <junction id="C_ust" type="traffic_light" x="0.00" y="10.00" incLanes="ana_B2_0 ana_B2_1 ana_B2_2 pehlivanli_merkez_0" intLanes=":C_ust_0_0 :C_ust_0_1 :C_ust_2_0" shape="4.95,12.00 4.95,5.50 2.20,5.06 1.24,4.50 0.55,3.72 0.14,2.72 0.00,1.50 -3.25,1.50 -3.69,3.72 -4.25,4.50 -5.03,5.06 -6.03,5.39 -7.25,5.50 -7.25,12.00 -4.80,12.41 -4.10,12.93 -3.73,13.65 -3.71,14.58 -4.04,15.71 -1.02,16.92 0.52,14.19 1.46,13.23 2.51,12.55 3.67,12.14">
+        <request index="0" response="000" foes="100" cont="0"/>
+        <request index="1" response="000" foes="100" cont="0"/>
+        <request index="2" response="011" foes="011" cont="0"/>
+    </junction>
+    <junction id="E_in" type="dead_end" x="330.00" y="10.00" incLanes="" intLanes="" shape="330.00,5.50 330.00,12.00"/>
+    <junction id="E_out" type="dead_end" x="330.00" y="-10.00" incLanes="ana_D4_0 ana_D4_1 ana_D4_2" intLanes="" shape="330.00,-12.00 330.00,-5.50"/>
+    <junction id="NE" type="traffic_light" x="145.00" y="10.00" incLanes="hamit_giris_0 ana_B1_0 ana_B1_1 ana_B1_2" intLanes=":NE_0_0 :NE_1_0 :NE_2_0 :NE_2_1" shape="143.71,19.38 151.61,15.54 151.01,13.57 151.20,12.88 151.72,12.39 152.56,12.10 153.73,12.00 153.73,5.50 138.11,5.50 138.11,12.00 140.51,12.82 141.51,13.84 142.38,15.28 143.11,17.12">
+        <request index="0" response="1100" foes="1100" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0001" cont="0"/>
+        <request index="3" response="0000" foes="0001" cont="0"/>
+    </junction>
+    <junction id="NE_in" type="dead_end" x="195.00" y="180.00" incLanes="" intLanes="" shape="196.55,179.52 193.45,180.48"/>
+    <junction id="NE_out" type="dead_end" x="208.00" y="180.00" incLanes="hamit_cikis_0" intLanes="" shape="209.56,179.55 206.44,180.45"/>
+    <junction id="N_in" type="dead_end" x="-30.00" y="220.00" incLanes="" intLanes="" shape="-28.38,220.07 -31.62,219.93"/>
+    <junction id="N_split" type="priority" x="-12.00" y="40.00" incLanes="pehlivanli_giris_0" intLanes=":N_split_0_0 :N_split_1_0" shape="-8.61,35.90 -11.63,34.70 -12.74,36.42 -13.47,36.92 -14.32,37.17 -15.28,37.19 -16.36,36.96 -17.32,40.06 -15.47,41.04 -14.89,41.74 -14.54,42.57 -14.41,43.53 -14.51,44.63 -11.32,45.23 -10.93,43.19 -10.62,41.69 -10.31,40.47 -9.92,39.26 -9.38,37.83">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="R_stop" type="traffic_light" x="-43.00" y="25.00" incLanes="sag_ayrilma_0" intLanes=":R_stop_0_0" shape="-43.74,26.45 -42.04,23.68 -44.16,26.15 -44.01,26.27 -43.96,26.31 -43.90,26.35">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="S1" type="priority" x="-55.00" y="10.00" incLanes="sag_katilma_0 ana_B3_0 ana_B3_1 ana_B3_2" intLanes=":S1_0_0 :S1_1_0 :S1_1_1" shape="-53.73,15.64 -50.89,14.06 -51.26,12.91 -51.16,12.51 -50.86,12.23 -50.36,12.06 -49.68,12.00 -49.68,5.50 -58.10,5.50 -58.10,12.00 -56.57,12.40 -55.83,12.91 -55.11,13.62 -54.41,14.52">
+        <request index="0" response="110" foes="110" cont="0"/>
+        <request index="1" response="000" foes="001" cont="0"/>
+        <request index="2" response="000" foes="001" cont="0"/>
+    </junction>
+    <junction id="SE" type="traffic_light" x="95.00" y="-10.00" incLanes="akif_giris_0 ana_D3_0 ana_D3_1 ana_D3_2" intLanes=":SE_0_0 :SE_1_0 :SE_1_1" shape="103.68,-5.50 103.68,-12.00 101.66,-12.40 101.14,-12.89 100.93,-13.58 101.06,-14.47 101.50,-15.56 98.61,-17.04 96.73,-14.24 95.67,-13.26 94.54,-12.56 93.32,-12.14 92.03,-12.00 92.03,-5.50">
+        <request index="0" response="110" foes="110" cont="0"/>
+        <request index="1" response="000" foes="001" cont="0"/>
+        <request index="2" response="000" foes="001" cont="0"/>
+    </junction>
+    <junction id="SW" type="priority" x="-130.00" y="-10.00" incLanes="guneybati_giris_0 ana_D1_0 ana_D1_1 ana_D1_2" intLanes=":SW_0_0 :SW_1_0 :SW_1_1" shape="-128.50,-5.50 -128.50,-12.00 -131.13,-12.44 -131.97,-12.96 -132.75,-13.66 -133.67,-14.52 -134.93,-15.52 -136.82,-12.87 -136.30,-12.39 -136.28,-12.22 -136.40,-12.10 -136.67,-12.02 -137.10,-12.00 -137.10,-5.50">
+        <request index="0" response="110" foes="110" cont="0"/>
+        <request index="1" response="000" foes="001" cont="0"/>
+        <request index="2" response="000" foes="001" cont="0"/>
+    </junction>
+    <junction id="SW_in" type="dead_end" x="-220.00" y="-125.00" incLanes="" intLanes="" shape="-221.42,-124.21 -218.58,-125.79"/>
+    <junction id="S_in" type="dead_end" x="165.00" y="-230.00" incLanes="" intLanes="" shape="163.41,-230.32 166.59,-229.68"/>
+    <junction id="S_out" type="dead_end" x="152.00" y="-230.00" incLanes="akif_cikis_0" intLanes="" shape="150.41,-230.35 153.59,-229.65"/>
+    <junction id="W_in" type="dead_end" x="-260.00" y="-10.00" incLanes="" intLanes="" shape="-260.00,-5.50 -260.00,-12.00"/>
+    <junction id="W_out" type="dead_end" x="-260.00" y="10.00" incLanes="ana_B4_0 ana_B4_1 ana_B4_2" intLanes="" shape="-260.00,12.00 -260.00,5.50"/>
+
+    <connection from="akif_giris" to="ana_D4" fromLane="0" toLane="1" via=":SE_0_0" tl="SE" linkIndex="0" dir="r" state="o"/>
+    <connection from="ana_B1" to="hamit_cikis" fromLane="1" toLane="0" via=":NE_1_0" tl="NE" linkIndex="1" dir="r" state="O"/>
+    <connection from="ana_B1" to="ana_B2" fromLane="1" toLane="1" via=":NE_2_0" tl="NE" linkIndex="2" dir="s" state="O"/>
+    <connection from="ana_B1" to="ana_B2" fromLane="2" toLane="2" via=":NE_2_1" tl="NE" linkIndex="3" dir="s" state="O"/>
+    <connection from="ana_B2" to="ana_B3" fromLane="1" toLane="1" via=":C_ust_0_0" tl="C" linkIndex="4" dir="s" state="O"/>
+    <connection from="ana_B2" to="ana_B3" fromLane="2" toLane="2" via=":C_ust_0_1" tl="C" linkIndex="5" dir="s" state="O"/>
+    <connection from="ana_B3" to="ana_B4" fromLane="1" toLane="1" via=":S1_1_0" dir="s" state="M"/>
+    <connection from="ana_B3" to="ana_B4" fromLane="2" toLane="2" via=":S1_1_1" dir="s" state="M"/>
+    <connection from="ana_D1" to="ana_D2" fromLane="1" toLane="1" via=":SW_1_0" dir="s" state="M"/>
+    <connection from="ana_D1" to="ana_D2" fromLane="2" toLane="2" via=":SW_1_1" dir="s" state="M"/>
+    <connection from="ana_D2" to="ana_D3" fromLane="1" toLane="1" via=":C_alt_2_0" tl="C" linkIndex="2" dir="s" state="O"/>
+    <connection from="ana_D2" to="ana_D3" fromLane="2" toLane="2" via=":C_alt_2_1" tl="C" linkIndex="3" dir="s" state="O"/>
+    <connection from="ana_D3" to="ana_D4" fromLane="1" toLane="1" via=":SE_1_0" tl="SE" linkIndex="1" dir="s" state="O"/>
+    <connection from="ana_D3" to="ana_D4" fromLane="2" toLane="2" via=":SE_1_1" tl="SE" linkIndex="2" dir="s" state="O"/>
+    <connection from="guneybati_giris" to="ana_D2" fromLane="0" toLane="1" via=":SW_0_0" dir="s" state="m"/>
+    <connection from="hamit_giris" to="ana_B2" fromLane="0" toLane="1" via=":NE_0_0" tl="NE" linkIndex="0" dir="r" state="o"/>
+    <connection from="merkez_asagi" to="akif_cikis" fromLane="0" toLane="0" via=":A_merge_0_0" dir="r" state="M"/>
+    <connection from="merkez_gecis" to="merkez_asagi" fromLane="0" toLane="0" via=":C_alt_0_0" tl="C" linkIndex="0" dir="L" state="o"/>
+    <connection from="merkez_gecis" to="ana_D3" fromLane="0" toLane="2" via=":C_alt_1_0" tl="C" linkIndex="1" dir="l" state="o"/>
+    <connection from="pehlivanli_giris" to="sag_ayrilma" fromLane="0" toLane="0" via=":N_split_0_0" dir="r" state="M"/>
+    <connection from="pehlivanli_giris" to="pehlivanli_merkez" fromLane="0" toLane="0" via=":N_split_1_0" dir="s" state="M"/>
+    <connection from="pehlivanli_merkez" to="merkez_gecis" fromLane="0" toLane="0" via=":C_ust_2_0" tl="C" linkIndex="6" dir="s" state="o"/>
+    <connection from="sag_ayrilma" to="sag_katilma" fromLane="0" toLane="0" via=":R_stop_0_0" tl="R_stop" linkIndex="0" dir="s" state="O"/>
+    <connection from="sag_katilma" to="ana_B4" fromLane="0" toLane="1" via=":S1_0_0" dir="r" state="m"/>
+
+    <connection from=":A_merge_0" to="akif_cikis" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":C_alt_0" to="merkez_asagi" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":C_alt_1" to="ana_D3" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":C_alt_2" to="ana_D3" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":C_alt_2" to="ana_D3" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":C_ust_0" to="ana_B3" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":C_ust_0" to="ana_B3" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":C_ust_2" to="merkez_gecis" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":NE_0" to="ana_B2" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":NE_1" to="hamit_cikis" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":NE_2" to="ana_B2" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":NE_2" to="ana_B2" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":N_split_0" to="sag_ayrilma" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":N_split_1" to="pehlivanli_merkez" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":R_stop_0" to="sag_katilma" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":S1_0" to="ana_B4" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":S1_1" to="ana_B4" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":S1_1" to="ana_B4" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":SE_0" to="ana_D4" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":SE_1" to="ana_D4" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":SE_1" to="ana_D4" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":SW_0" to="ana_D2" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":SW_1" to="ana_D2" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":SW_1" to="ana_D2" fromLane="1" toLane="2" dir="s" state="M"/>
+
+</net>

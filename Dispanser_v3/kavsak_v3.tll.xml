@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-08T10:20:56.213494+03:00 by Eclipse SUMO netconvert 1.28.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value=".\outputs\Dispanser_v2\kavsak_v2.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value=".\outputs\Dispanser_v3\kavsak_v3.net.xml"/>
+        <plain-output-prefix value=".\outputs\Dispanser_v3\kavsak_v3"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.green.time value="25"/>
+        <tls.yellow.time value="3"/>
+        <tls.allred.time value="2"/>
+        <tls.rebuild value="true"/>
+    </tls_building>
+
+    <edge_removal>
+        <remove-edges.explicit value="merkez_kuzeye,pehlivanli_cikis"/>
+    </edge_removal>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<tlLogics version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tllogic_file.xsd">
+    <tlLogic id="C" type="static" programID="0" offset="0">
+        <phase duration="25" state="rrGGGGr"/>
+        <phase duration="3"  state="rryyyyr"/>
+        <phase duration="2"  state="rrrrrrr"/>
+        <phase duration="25" state="GGrrrrG"/>
+        <phase duration="3"  state="yyrrrry"/>
+        <phase duration="2"  state="rrrrrrr"/>
+    </tlLogic>
+    <tlLogic id="NE" type="static" programID="0" offset="0">
+        <phase duration="25" state="GGrr"/>
+        <phase duration="3"  state="yyrr"/>
+        <phase duration="2"  state="rrrr"/>
+        <phase duration="25" state="rGGG"/>
+        <phase duration="3"  state="ryyy"/>
+        <phase duration="2"  state="rrrr"/>
+    </tlLogic>
+    <tlLogic id="R_stop" type="static" programID="0" offset="0">
+        <phase duration="25" state="G"/>
+        <phase duration="3"  state="y"/>
+        <phase duration="2"  state="r"/>
+    </tlLogic>
+    <tlLogic id="SE" type="static" programID="0" offset="0">
+        <phase duration="25" state="Grr"/>
+        <phase duration="3"  state="yrr"/>
+        <phase duration="2"  state="rrr"/>
+        <phase duration="25" state="rGG"/>
+        <phase duration="3"  state="ryy"/>
+        <phase duration="2"  state="rrr"/>
+    </tlLogic>
+
+    <connection from="akif_giris" to="ana_D4" fromLane="0" toLane="1" tl="SE" linkIndex="0"/>
+    <connection from="ana_B1" to="hamit_cikis" fromLane="1" toLane="0" tl="NE" linkIndex="1"/>
+    <connection from="ana_B1" to="ana_B2" fromLane="1" toLane="1" tl="NE" linkIndex="2"/>
+    <connection from="ana_B1" to="ana_B2" fromLane="2" toLane="2" tl="NE" linkIndex="3"/>
+    <connection from="ana_B2" to="ana_B3" fromLane="1" toLane="1" tl="C" linkIndex="4"/>
+    <connection from="ana_B2" to="ana_B3" fromLane="2" toLane="2" tl="C" linkIndex="5"/>
+    <connection from="ana_D2" to="ana_D3" fromLane="1" toLane="1" tl="C" linkIndex="2"/>
+    <connection from="ana_D2" to="ana_D3" fromLane="2" toLane="2" tl="C" linkIndex="3"/>
+    <connection from="ana_D3" to="ana_D4" fromLane="1" toLane="1" tl="SE" linkIndex="1"/>
+    <connection from="ana_D3" to="ana_D4" fromLane="2" toLane="2" tl="SE" linkIndex="2"/>
+    <connection from="hamit_giris" to="ana_B2" fromLane="0" toLane="1" tl="NE" linkIndex="0"/>
+    <connection from="merkez_gecis" to="merkez_asagi" fromLane="0" toLane="0" tl="C" linkIndex="0"/>
+    <connection from="merkez_gecis" to="ana_D3" fromLane="0" toLane="2" tl="C" linkIndex="1"/>
+    <connection from="pehlivanli_merkez" to="merkez_gecis" fromLane="0" toLane="0" tl="C" linkIndex="6"/>
+    <connection from="sag_ayrilma" to="sag_katilma" fromLane="0" toLane="0" tl="R_stop" linkIndex="0"/>
+</tlLogics>

@@ -58,8 +58,8 @@ SUMO ağı + aynı talep ve rastgele tohumlar
 Modeli ayarlamak ve doğrulamak için kullanılacak ölçümler ayrılacaktır.
 
 ## Hesaplama ortamı
-- İşletim sistemi: ___
-- SUMO sürümü: ___
+- İşletim sistemi: win11
+- SUMO sürümü: 1.28.0
 - Python sürümü: ___
 - Python–SUMO bağlantısı: `traci`
 - Diğer paketler: ___
